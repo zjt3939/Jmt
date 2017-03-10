@@ -1,0 +1,271 @@
+
+
+/* index页面 */
+.tab_content{
+	width: 100%;
+	position: relative;
+}
+.tab_content>img{
+	position: inherit;
+}
+.menu_list{
+	width: 20%;
+	position: absolute;
+    left: 14%;
+    top: 7%;
+    z-index: 999;
+    background-color: #fff;
+}
+.menu_list ul{
+	padding-left: 20px;
+}
+.menu_list li{
+	padding: 20px 20px 20px 0px;
+	border-bottom: 1px solid #ddd;
+	background: url(../images/right.png)no-repeat;
+	background-position: 95% center;
+    background-size: 24px;
+
+}
+.menu_list li>img{
+	float: left;
+	margin-right: 20px;
+}
+.menu_list li p{
+	line-height: 1.5em;
+}
+.menu_list li span{
+	font-size: 0.75em;
+	color: #9c99b0;
+}
+
+/* 新闻滚动报道条 */
+.scroll_new{
+	border: 1px solid #72baee;
+	overflow: hidden;
+}
+.scroll_tite {
+    float: left;
+    width: 2em;
+    font-size: 2em;
+    color: #fff;
+    background: #72baee;
+    padding: 10px 20px;
+}
+.scroll_content{
+	width: 900px;
+	height: 100px;
+	float: left;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.scroll_content ul{
+
+}
+.scroll_content ul li{
+	width: 850px;
+	display: none;
+	color: #000;
+	position: absolute;
+	background: #fff;
+	top: 30px;
+	left: 40px;
+}
+.scroll_content ul li p{
+	color: #000;
+}
+
+/* 新闻展示栏 */
+.new_column{
+	padding-top: 10px;
+}
+.autoplay_box {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+.autoplay_box>p,.displaynew>p {
+    color: #72baee;
+    border-bottom: 1px solid #aeaeaa;
+    padding-bottom: 5px;
+   
+}
+
+.autoplay_box>p>a,.displaynew>p>a {
+    color: #888;
+    display: inline-block;
+    float: right;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+.displaynew{
+	width: 52%;
+	float: right;
+}
+.displaynew_box{
+padding-top: 10px;
+}
+.displaynew_box>ul>li{
+	padding-bottom: 10px;
+}
+.createtime>span {
+    display: block;
+    font-size: 0.5em;
+}
+.createtime {
+    padding: 8px 15px;
+    background-color: #72baee;
+    float: left;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+.createtime~p {
+    font-size: 0.75em;
+    line-height: 2em;
+    vertical-align: middle;
+    display: block;
+    float: left;
+    padding-left: 10px;
+}
+.createtime~a {
+    float: left;
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.createtime~a:hover{
+	list-style-type:;
+	cursor: pointer;
+
+}
+
+/* 热门游记 */
+.travel_report{
+	padding-top: 30px;
+}
+.tags_report {
+    width: 45%;
+    float: left;
+    border: 1px solid #eaeaea;
+    box-shadow: 1px 1px 4px #eaeaea;
+}
+
+.tags_report:hover{
+	box-shadow: 2px -1px 43px #eaeaea;
+}
+.moudle_report {
+    width: 50%;
+    float: right;
+}
+.tags_report>p {
+    padding-left: 40px;
+    border-top: 3px solid #72baee;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 2em;
+    color: #72baee;
+}
+
+.tags_report>p>a ,.tags_content>p>span{
+    display: inline-block;
+    float: right;
+    color: #999;
+    font-size: 0.75em;
+}
+
+.tags_box>ul>li {
+    padding: 17px 0px;
+}
+
+.tags_box>ul {
+    padding: 15px;
+}
+li.tags_content>a {
+    display: block;
+    line-height: 1.5em;
+    font-size: 0.85em;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+li.tags_content>a:hover{
+	text-decoration: underline;
+}
+.moudle_report>div {
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+}
+
+.moudle_title>p>span {
+    display: block;
+}
+.moudle_title {
+    width: 150px;
+    height: 150px;
+    background-color: #4aaa44;
+    color: #fff;
+    padding: 15px;
+    float: left;
+    position: relative;
+}
+.moudle_title>a {
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    font-size: 0.8em;
+}
+ul.moudle_box>li {
+    display: inline-block;
+    padding: 7px 30px;
+}
+.moudle_box a{
+	color: #101010;
+	font-weight: 300;
+}
+.moudle_box a:hover{
+	text-decoration: underline;
+}
+div.blue{
+	background-color: #0078c4;
+}
+
+/*景区介绍*/
+.scenic_introduction.range.clearfix>p {
+    line-height: 40px;
+    color: #0078c4;
+    border-bottom: 1px solid #eaeaea;
+}
+.scenic_introduction.range.clearfix>p>a {
+    display: inline-block;
+    float: right;
+    font-size: 0.8em;
+    color: #999;
+}
+.scenic_box>ul>li {
+    float: left;
+    width: 21%;
+    padding: 10px;
+    border: 1px solid #eaeaee;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 1px 1px 4px #eaeaea;
+}
+.scenic_box>ul>li:hover{
+    box-shadow: 2px 3px 30px #eaeaea;
+}
+.secnic_image_box>img {
+    width: 100%;
+    height: 100%;
+}
+li.secnic_box>p:nth-of-type(2) {
+    color: #ff0000;
+    line-height: 1.5em;
+    margin-top: 5px;
+}
+
+inspector-stylesheet:1
+li.secnic_box>p:nth-of-type(1) {
+    font-size: 0.85em;
+    color: #0d3d61;
+}
