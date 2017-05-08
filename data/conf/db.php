@@ -6,14 +6,14 @@
 return array(
     'DB_TYPE' => 'mysql',
     'DB_HOST' => '127.0.0.1',
-    'DB_NAME' => 'thinkcmf',
+    'DB_NAME' => 'jmtdb',
     'DB_USER' => 'root',
     'DB_PWD' => '00000000',
     'DB_PORT' => '3306',
-    'DB_PREFIX' => 'Ly_',
+    'DB_PREFIX' => 'ly_',
     //密钥
-    "AUTHCODE" => '4m0HBrN23lUJAAExFs',
+    "AUTHCODE" => 'ixusL3aTYzgsJkQAmr',
     //cookies
-    "COOKIE_PREFIX" => 'R9Lrj5_',
+    "COOKIE_PREFIX" => '4ByCRt_',
 );
 ?>

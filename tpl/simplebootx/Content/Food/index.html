@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://www.xiaxiangke.com/strategy.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>下乡客·湖南乡村旅游推广平台 - 旅行游记</title>
+
+    <meta name="keywords" content="下乡客,乡村旅游,湖南旅游,湖南亲子旅游,旅游定制,长沙周边游,湖南自驾游,湘西旅游攻略">
+    <meta name="description" content="下乡客是国内首款“互联网+乡村资源”O2O互动新媒体服务平台，致力于湖南地区乡村旅游资源开发，拥有最完善的旅游攻略，提供旅游定制服务，支持周边游、自驾游、亲子游等多种旅游方式。">
+    <link href="__TMPL__Public/css/contain.css" rel="stylesheet">
+    <link href="__TMPL__Public/css/banner.css" rel="stylesheet">
+    <!-- <link href="__TMPL__Public/css/pagination.css" rel="stylesheet"> -->
+    <!-- <link href="__TMPL__Public/css/public.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="__TMPL__Public/css/nav.css">
+    <script src="__TMPL__Public/js/hm.js"></script>
+    <script src="__TMPL__Public/js/jquery-1.7.1.min.js"></script>
+</head>
+
+<body>
+    <tc_include file="Public:Jnav" />
+    <div id="container">
+        <div id="container1">
+
+            <div class="divisiondivc">
+                <div style="font-size:28px;color:#333333; font-weight:bold; width:1000px !important; float:left;">当地美食</div>
+                <div style="margin-top:16px; color:#666666; font-size:16px; width:1000px !important; float:left;">带你发现、体验不一样的乡村！</div>
+                <div style="clear:both;"></div>
+            </div>
+
+            <div class="strategylist" id="Result">
+                <foreach name="ImageData" item="Io">
+                    <div class="margin_bottom_20" style="float:left; display:block; width:25%;">
+                        <div class="list1">
+                            <a href="{:U('Portal/Article/index')}&id={$Io['id']}" target="_blank">
+                                <img src="{$Io['smeta']}">
+                                <div class="strategylistdetail"style="text-align:left">{$Io['post_title']}</div>
+                                <div class="strategylistinfo">
+                                   <!--  <img src="__TMPL__Public/image/headicon.png"> -->
+                                    作者：
+                                    <span>{$Io['post_author']}</span>
+                                    <span class="spanrt16">{$Io['post_modified']}</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                     <!-- <div style="clear:both;"></div> -->
+                </foreach>
+    <div style="clear:both;"></div>
+    </div>
+    </div>
+
+    <div style="clear:both; margin-bottom:24px;"></div>
+    <tc_include file="Public:Jfooter" />
+</body>
+
+</html>

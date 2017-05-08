@@ -3,34 +3,97 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="css/nav.css">
 	　<meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- 	<meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<!-- <link rel="stylesheet" href="css/xnav.css"> -->
 </head>
 <body>
-	<nav>
+
+	<div class="Jnav">
 		<div class="nav_logo">
 			<div class="range">
 				<div class="logo_box clearfix">
-					<div class="logo_img"><a href="#"><img src="images/Jlogo.png" alt=""></a></div>
-					<div class="search_box"><input type="text" name="" id="search_key"  value="请输入关键字" onfocus="javascript:if(this.value=='请输入内容')this.value='';"><input type="button" value="搜索" class="search_button"></div>
+					<div class="logo_img"><a href="#"><img src="__TMPL__/Public/images/Jlogo.jpg" alt="" width="70%;"></a></div>
+					<div class="toolbox">
+						<div class="search_box">
+						<form method="post" class="form-inline" action="{:U('portal/search/index')}" style="margin:18px 0;">
+							<input type="text" name="keyword" id="search_key"  value="{:I('get.keyword')}" onfocus="javascript:if(this.value=='请输入内容')this.value='';" placeholder="Search" style="padding:8px 10px">
+							<input type="submit" value="搜索" class="search_button" style="margin-left: 0px;">
+						</form>
+					</div>
+					<php>$login_status =sp_is_user_login() </php>
+				<!--  -->
+					<if condition="$login_status eq true">
+						
+						<div class="user_logined userinfobox">
+							<img src="<php>
+								$userData = sp_get_current_user();
+								echo sp_get_user_avatar_url($userData['avatar']);
+							</php>" width="30px" height="30px" alt="">
+							<span class="user_nicename name_box user_login" id="nicename"><php>
+							$userData = sp_get_current_user();
+							echo $userData['user_nicename'];
+						</php></span>
+							<ul class="user_action">
+								<li><a href="{:u('user/center/index')}">个人中心</a></li>
+								<li><a href="{:u('user/index/logout')}">退出</a></li>
+							</ul>
+						</div>
+					</if>
+
+					<if condition="$login_status eq false">
+					<div class="user_unlogined userinfobox">
+							<img src="__TMPL__/Public/images/headicon.png" width="30px" height="30px" alt="">
+							<span class="user_login name_box">登录</span>
+							<ul class="user_action">
+								<li><a href="{:u('user/login/index')}">登录</a></li>
+								<li><a href="{:u('user/register/index')}">注册</a></li>
+							</ul>
+					</div>
+					</if>
+					<script>
+						$(function(){
+							$('.userinfobox').mouseenter(function(){
+								$(".user_action").slideDown();
+							}).mouseleave(function(){
+									$('.user_action').slideUp();
+								});
+						});
+					</script>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="nav_box">
 			<div class="range">
 				<ul>
-					<li><a href="">首页</a></li>
+					<!-- <li><a href="">首页</a></li>
 					<li><a href="">扶贫路线</a></li>
 					<li><a href="">精品路线</a></li>
 					<li><a href="">乡村美图</a></li>
 					<li><a href="">活动直播</a></li>
 					<li><a href="">旅游日记</a></li>
-					<li><a href="">新闻资讯</a></li>
+					<li><a href="">新闻资讯</a></li> -->
+					<?php
+						$effected_id="";
+					  	$filetpl="<a href='\$href' target='\$target'>\$label</a>";
+					  	$foldertpl="<a href='\$href' target='\$target' class='dropdown-toggle' data-toggle='dropdown'>\$label <b class='caret'></b></a>";
+					  	$ul_class="dropdown-menu" ;
+					  	$li_class="" ;
+					  	$style="nav";
+					  	$showlevel=6;
+					  	$dropdown='dropdown';
+					  	echo sp_get_menu("main",$effected_id,$filetpl,$foldertpl,$ul_class,$li_class,$style,$showlevel,$dropdown);
+					?>
+			
 				</ul>
 			</div>
 		</div>
-	</nav>
+	</div>
+	<script>
+	/*	$(){}*/
+
+
+	</script>
 </body>
 </html>

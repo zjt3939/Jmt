@@ -54,6 +54,7 @@ class AdminPostController extends AdminbaseController {
 			$article=I("post.post");
 			$article['smeta']=json_encode($_POST['smeta']);
 			$article['post_content']=htmlspecialchars_decode($article['post_content']);
+			$article['content_type'] = $_POST['term'][0];
 			$result=$this->posts_model->add($article);
 			if ($result) {
 				//

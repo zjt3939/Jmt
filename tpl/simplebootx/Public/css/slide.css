@@ -1,0 +1,149 @@
+/*首页图片新闻*/
+#slidebox {
+	margin: 20px auto;float:left;width: 390px; height: 346px; overflow: hidden; position: relative;
+}
+#slidebox .pic_news_title{border-bottom:1px solid #c3c3c3;padding-bottom:3px;margin-bottom:15px;}
+#slidebox .pic_news_title span{font-size:16px;color:#45aa44;font-weight:bold;float:left;}
+#slidebox #textball{text-align:left;}
+#slidebox #textball li{width:235px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
+
+#slidebox ul#show_pic {
+	list-style: none; margin: 0px; padding: 0px; width: 1950px; height: 322px; position: absolute;
+}
+#slidebox ul#show_pic li {
+	margin: 0px; padding: 0px; height: 285px; float: left;
+}
+#slidebox ul#show_pic li img {
+	display: block;
+}
+#iconball {
+	right: 0px; bottom: 0px; position: absolute;margin-bottom:0;
+}
+#iconball li {
+	width: 32px; height: 28px; text-align: center; color: rgb(122, 122, 122); line-height: 28px; padding-top: 1px; font-size: 14px; font-weight: bold; float: left; cursor: pointer;
+}
+#iconball li.active {
+	background: #47a943; color: rgb(255, 255, 255);
+}
+#slidetext {
+	background: rgba(0, 0, 0, 0.7); left: 0px; width: 576px; height: 28px; bottom: 0px; color: rgb(255, 255, 255); filter: progid:dximagetransform.microsoft.gradient(startcolorstr=#b2000000, endcolorstr=#b2000000); position: absolute;
+}
+#textball {
+	left: 0px; bottom: 3px; position: absolute;margin-bottom:0;
+}
+#textball li {
+	color: rgb(255, 255, 255); font-size: 14px; float: left; display: none; cursor: pointer;
+}
+#textball li.active {
+	display: block;
+}
+#textball li a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+p {
+	color: rgb(102, 102, 102); font-size: 12px;
+}
+p a {
+	color: rgb(102, 102, 102); font-size: 12px;
+}
+/*扶贫新闻*/
+
+#slidebox1 {
+	margin: 20px auto;float:left;width: 576px; height: 322px; overflow: hidden; position: relative;
+}
+#slidebox1 .pic_news_title{border-bottom:1px solid #c3c3c3;padding-bottom:3px;margin-bottom:5px;}
+#slidebox1 .pic_news_title span{font-size:16px;color:#45aa44;font-weight:bold;float:left;}
+#slidebox1 #textball{text-align:left;}
+#slidebox1 #textball li{width:361px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
+
+#slidebox1 ul#show_pic {
+	list-style: none; margin: 0px; padding: 0px; width: 3000px; height: 322px; position: absolute;
+}
+#slidebox1 ul#show_pic li {
+	margin: 0px; padding: 0px; height: 285px; float: left;
+}
+#slidebox1 ul#show_pic li img {
+	display: block;
+}
+#iconball1 {
+	right: 0px; bottom: 0px; position: absolute;margin-bottom:0;
+}
+#iconball1 li {
+	width: 32px; height: 28px; text-align: center; color: rgb(122, 122, 122); line-height: 28px; padding-top: 4px; font-size: 14px; font-weight: bold; float: left; cursor: pointer;
+}
+#iconball1 li.active {
+	background: #47a943; color: rgb(255, 255, 255);
+}
+#slidetext1 {
+	background: rgba(0, 0, 0, 0.7); left: 0px; width: 576px; height: 28px; bottom: 0px; color: rgb(255, 255, 255); filter: progid:dximagetransform.microsoft.gradient(startcolorstr=#b2000000, endcolorstr=#b2000000); position: absolute;
+}
+#textball1 {
+	left: 0px; bottom: 3px; position: absolute;margin-bottom:0;
+}
+#textball1 li {
+	width:361px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;text-align: left;
+	color: rgb(255, 255, 255); font-size: 14px; float: left; display: none; cursor: pointer;
+}
+#textball1 li.active {
+	display: block;
+}
+#textball1 li a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+p {
+	color: rgb(102, 102, 102); font-size: 12px;
+}
+p a {
+	color: rgb(102, 102, 102); font-size: 12px;
+}
+
+/*新闻资讯*/
+
+#slidebox2 {
+	margin: 20px auto;float:left;width: 667px; height: 322px; overflow: hidden; position: relative;
+}
+#slidebox2 .pic_news_title{border-bottom:1px solid #c3c3c3;padding-bottom:3px;margin-bottom:5px;}
+#slidebox2 .pic_news_title span{font-size:16px;color:#45aa44;font-weight:bold;float:left;}
+#slidebox2 #textball{text-align:left;}
+#slidebox2 #textball li{width:361px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
+
+#slidebox2 ul#show_pic {
+	list-style: none; margin: 0px; padding: 0px; width: 3800px; height: 322px; position: absolute;
+}
+#slidebox2 ul#show_pic li {
+	margin: 0px; padding: 0px; height: 285px; float: left;
+}
+#slidebox2 ul#show_pic li img {
+	display: block;
+}
+#iconball2 {
+	right: 0px; bottom: 0px; position: absolute;margin-bottom:0;
+}
+#iconball2 li {
+	width: 32px; height: 28px; text-align: center; color: rgb(122, 122, 122); line-height: 28px; padding-top: 4px; font-size: 14px; font-weight: bold; float: left; cursor: pointer;
+}
+#iconball2 li.active {
+	background: #47a943; color: rgb(255, 255, 255);
+}
+#slidetext2 {
+	background: rgba(0, 0, 0, 0.7); left: 0px; width: 667px; height: 28px; bottom: 0px; color: rgb(255, 255, 255); filter: progid:dximagetransform.microsoft.gradient(startcolorstr=#b2000000, endcolorstr=#b2000000); position: absolute;
+}
+#textball2 {
+	left: 0px; bottom: 3px; position: absolute;margin-bottom:0;
+}
+#textball2 li {
+	width:361px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;text-align: left;
+	color: rgb(255, 255, 255); font-size: 14px; float: left; display: none; cursor: pointer;
+}
+#textball2 li.active {
+	display: block;
+}
+#textball2 li a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+p {
+	color: rgb(102, 102, 102); font-size: 12px;
+}
+p a {
+	color: rgb(102, 102, 102); font-size: 12px;
+}

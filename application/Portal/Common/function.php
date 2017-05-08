@@ -241,7 +241,7 @@ function sp_sql_posts_paged_bykeyword($keyword,$tag,$pagesize=20,$pagetpl='{firs
 	//根据参数生成查询条件
 	$where['status'] = array('eq',1);
 	$where['post_status'] = array('eq',1);
-	$where['post_title'] = array('like','%' . $keyword . '%');
+	$where['post_keywords'] = array('like','%' . $keyword . '%');
 	
 	if (isset($tag['cid'])) {
 		$where['term_id'] = array('in',$tag['cid']);
